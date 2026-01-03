@@ -44,10 +44,14 @@ export default function Contact() {
   };
 
   return (
+<<<<<<< HEAD
     <section
       className="section-padding relative pb-24 scroll-mt-24"
       id="contact"
     >
+=======
+    <section className="section-padding relative pb-24 scroll-mt-24" id="contact">
+>>>>>>> origin/main
       <VideoBackground videoSrc="/background-v3.mp4" opacity={0.25} />
       <div className="container-custom relative z-10 space-y-6 md:space-y-8">
         <div className="flex flex-wrap items-center justify-between gap-3">
@@ -80,12 +84,19 @@ export default function Contact() {
                 Hoàng Yến - Hỗ trợ học tập
               </p>
               <h3 className="text-2xl md:text-3xl font-bold text-text-primary leading-snug">
+<<<<<<< HEAD
                 Xây hệ thống tin cậy, an toàn, hiệu năng cao và sẵn sàng mở
                 rộng.
               </h3>
               <p className="text-text-secondary leading-relaxed">
                 Rõ ràng phạm vi, bàn giao đúng công việc, luôn được hỗ trợ trên
                 cơ sở thỏa thuận.
+=======
+                Xây hệ thống tin cậy, an toàn, hiệu năng cao và sẵn sàng mở rộng.
+              </h3>
+              <p className="text-text-secondary leading-relaxed">
+                Rõ ràng phạm vi, bàn giao đúng công việc, luôn được hỗ trợ trên cơ sở thỏa thuận.
+>>>>>>> origin/main
               </p>
             </div>
 
@@ -116,6 +127,7 @@ export default function Contact() {
             </ul>
 
             <div className="flex flex-wrap gap-2">
+<<<<<<< HEAD
               {[
                 "Sinh viên",
                 "Bài tập / tiểu luận",
@@ -129,6 +141,18 @@ export default function Contact() {
                   {tag}
                 </span>
               ))}
+=======
+              {["Sinh viên", "Bài tập / tiểu luận", "Thuyết trình", "Tư vấn quy trình"].map(
+                (tag) => (
+                  <span
+                    key={tag}
+                    className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-text-secondary"
+                  >
+                    {tag}
+                  </span>
+                )
+              )}
+>>>>>>> origin/main
             </div>
           </div>
 
@@ -138,8 +162,12 @@ export default function Contact() {
                 Kênh liên hệ
               </p>
               <p className="text-text-secondary leading-relaxed">
+<<<<<<< HEAD
                 Scan QR hoặc mở link trực tiếp. Nhấn &quot;Sao chép&quot; nếu
                 muốn gửi qua ứng dụng khác.
+=======
+                Scan QR hoặc mở link trực tiếp. Nhấn "Sao chép" nếu muốn gửi qua ứng dụng khác.
+>>>>>>> origin/main
               </p>
             </div>
 
@@ -170,9 +198,13 @@ export default function Contact() {
                       Mở link
                     </a>
                     <button
+<<<<<<< HEAD
                       onClick={() =>
                         copyLink(method.link as string, method.key)
                       }
+=======
+                      onClick={() => copyLink(method.link as string, method.key)}
+>>>>>>> origin/main
                       className="text-text-secondary text-sm hover:text-text-primary"
                     >
                       Sao chép

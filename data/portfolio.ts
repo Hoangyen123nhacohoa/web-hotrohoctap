@@ -61,18 +61,27 @@ export const portfolioData: PortfolioData = {
     gallery: [
       { src: "/avatar-fb.jpg", label: "Facebook" },
       { src: "/avatar-zalo.jpg", label: "Zalo" },
+<<<<<<< HEAD
     ],
+=======
+     ],
+>>>>>>> origin/main
     role: "Hỗ trợ học tập cho sinh viên đại học",
     headline:
       "Xây hệ thống tin cậy, an toàn, hiệu năng cao và sẵn sàng mở rộng.",
     valueProposition:
       "Minh bạch, không cọc. Sửa đến khi ổn. Làm việc có tâm, đúng tiến độ. Hạn chế công cụ tự động, bám sát yêu cầu môn học. Đồng hành và hỗ trợ sinh viên hết mình.",
+<<<<<<< HEAD
     zalo: "https://zaloapp.com/qr/p/28hv09lxbt0s",
     facebook: "https://www.facebook.com/share/1CCwW5gnN1/",
     email: "your-email@example.com",
     linkedin: "",
     github: "",
     cvUrl: "",
+=======
+        zalo: "https://zaloapp.com/qr/p/28hv09lxbt0s",
+    facebook: "https://www.facebook.com/share/1CCwW5gnN1/",
+>>>>>>> origin/main
   },
 
   highlights: [

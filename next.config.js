@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+<<<<<<< HEAD
   output: 'export',
+=======
+>>>>>>> origin/main
   reactStrictMode: true,
   images: {
     formats: ['image/avif', 'image/webp'],
@@ -22,3 +25,7 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
