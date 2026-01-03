@@ -1,4 +1,4 @@
 [build]
-  # Build and export static files for Netlify
-  command = "npm run build && npx next export"
+  # Build static files for Netlify (Next's `output: 'export'` handles the export)
+  command = "npm run build"
   publish = "out"

@@ -1,22 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-<<<<<<< HEAD
-  output: 'export',
-=======
->>>>>>> origin/main
+  output: "export",
   reactStrictMode: true,
   images: {
-    formats: ['image/avif', 'image/webp'],
+    formats: ["image/avif", "image/webp"],
   },
   // Optimize video loading
   async headers() {
     return [
       {
-        source: '/:path*.mp4',
+        source: "/:path*.mp4",
         headers: [
           {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
           },
         ],
       },
@@ -25,7 +22,3 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/main

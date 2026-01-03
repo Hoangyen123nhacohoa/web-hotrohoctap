@@ -33,12 +33,8 @@ export default function Skills() {
           </p>
           <h2 className="section-title">Gói giải pháp & triển khai</h2>
           <p className="text-text-secondary text-base md:text-lg leading-relaxed">
-<<<<<<< HEAD
             Cải tiến quy trình, thiết kế luồng, tối ưu vận hành và bảo mật; dùng
             công cụ phù hợp để hỗ trợ bài tập, báo cáo hay đề bài học tập.
-=======
-            Cải tiến quy trình, thiết kế luồng, tối ưu vận hành và bảo mật; dùng công cụ phù hợp để hỗ trợ bài tập, báo cáo hay đề bài học tập.
->>>>>>> origin/main
           </p>
         </div>
         <motion.div
@@ -50,34 +46,20 @@ export default function Skills() {
         >
           {portfolioData.skills.map((category, index) => {
             const isOpen = openIndex === index;
-<<<<<<< HEAD
             const tags = category.skills.flatMap((skill) =>
               skill
                 .split(";")
                 .map((tag) => tag.trim())
                 .filter(Boolean)
             );
-=======
-            const tags = category.skills
-              .flatMap((skill) =>
-                skill
-                  .split(";")
-                  .map((tag) => tag.trim())
-                  .filter(Boolean)
-              );
->>>>>>> origin/main
 
             return (
               <motion.div
                 key={index}
                 variants={item}
-<<<<<<< HEAD
                 className={`rounded-2xl bg-[#0f1115]/90 border border-border shadow-[0_20px_55px_rgba(0,0,0,0.45)] overflow-hidden transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_26px_70px_rgba(0,0,0,0.55)] ${
                   isOpen ? "lg:col-span-3" : ""
                 }`}
-=======
-                className={`rounded-2xl bg-[#0f1115]/90 border border-border shadow-[0_20px_55px_rgba(0,0,0,0.45)] overflow-hidden transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_26px_70px_rgba(0,0,0,0.55)] ${isOpen ? "lg:col-span-3" : ""}`}
->>>>>>> origin/main
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
@@ -94,7 +76,6 @@ export default function Skills() {
                   </div>
                   <motion.span
                     initial={false}
-<<<<<<< HEAD
                     animate={{
                       rotate: isOpen ? 90 : 0,
                       scale: isOpen ? 1.05 : 1,
@@ -102,12 +83,6 @@ export default function Skills() {
                     className="text-text-secondary"
                   >
                     {">"}
-=======
-                    animate={{ rotate: isOpen ? 90 : 0, scale: isOpen ? 1.05 : 1 }}
-                    className="text-text-secondary"
-                  >
-                    >
->>>>>>> origin/main
                   </motion.span>
                 </button>
 
