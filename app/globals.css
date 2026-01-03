@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+    overflow-x: hidden;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply text-text-primary font-sans antialiased min-h-screen overflow-x-hidden;
+    background:
+      radial-gradient(90% 70% at 20% 20%, rgba(59, 130, 246, 0.10), transparent),
+      radial-gradient(80% 60% at 80% 0%, rgba(59, 130, 246, 0.06), transparent),
+      linear-gradient(180deg, #040507 0%, #0b0d10 100%);
+  }
+
+  *:focus-visible {
+    @apply outline-2 outline-accent outline-offset-2;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-semibold text-text-primary leading-tight mb-6 md:mb-8;
+  }
+
+  .card-icon {
+    @apply h-12 w-12 rounded-2xl border border-accent/25 flex items-center justify-center text-accent shadow-[0_0_18px_rgba(94,234,212,0.2)];
+    background: rgba(94, 234, 212, 0.12);
+  }
+}
+
